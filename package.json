@@ -1,0 +1,23 @@
+{
+  "name": "node-js-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "start": "node http-module.js",
+    "dev": "nodemon http-module.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hasan9797/Node-JS-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hasan9797/Node-JS-/issues"
+  },
+  "homepage": "https://github.com/Hasan9797/Node-JS-#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
