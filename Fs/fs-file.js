@@ -20,31 +20,31 @@ const path = require("path");
 // })
 
 
-// fs.writeFile(path.join(__dirname, 'modules', 'path.txt'),
-//     '// Nodejs tutorial',
-//     (err) => {
-//         if (err) {
-//             throw err;
-//         }
-//         console.log('file was created successfully');
-//
-//         fs.appendFile(path.join(__dirname, 'modules', 'path.txt'),
-//             " by Hasan Sadullayev",
-//             (err) => {
-//             if (err) {
-//                 throw err;
-//             }
-//                 console.log('Document changed');
-//                 fs.readFile(path.join(__dirname, "modules", "path.txt"),
-//                     "utf-8",
-//                     (err, data) => {
-//                         if (err) {
-//                             throw err
-//                         }
-//                         console.log(Buffer.from(data).toString())
-//                     })
-//         })
-//     })
+fs.writeFile(path.join(__dirname, 'modules', 'path.txt'),
+    '// Nodejs tutorial',
+    (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log('file was created successfully');
+
+        fs.appendFile(path.join(__dirname, 'modules', 'path.txt'),
+            " by Hasan Sadullayev",
+            (err) => {
+            if (err) {
+                throw err;
+            }
+                console.log('Document changed');
+                fs.readFile(path.join(__dirname, "modules", "path.txt"),
+                    "utf-8",
+                    (err, data) => {
+                        if (err) {
+                            throw err
+                        }
+                        console.log(Buffer.from(data).toString())
+                    })
+        })
+    })
 
 
 fs.rename(path.join(__dirname, "modules", "path.txt"),
